@@ -43,6 +43,31 @@ header img{
 #logo{
     justify-self: end;
 }
+#navbar{
+    padding: 8px 200px 8px 0;
+    background-color: var(--c5);
+    display: none;
+    
+    
+}
+#busqueda{
+    background-color: var(--c5);
+    border: 2px solid var(--c2);
+    border-radius: 30px;
+    padding-left: 8px;
+    color: var(--c2);
+    font-size: 18px;
+    width: 350px;
+}
+
+.btn-navbar{
+    background-color: var(--c1);
+    border-radius: 50%;
+    border: 1px solid var(--c2);
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
+}
 main{
     padding: 40px 24px 0;
 }
@@ -214,4 +239,42 @@ main{
         height: 500px;
         max-width: 500px;
     }
+    #categorias{
+        max-width: 768px;
+        margin: 0 auto;
+    }
 }
+
+@media(min-width: 1200px){
+    header{
+        height: 68px;
+    }
+    #header{
+        height: 100%;    
+    }
+    #menu{
+        display: none;
+    }
+    #logo img{
+        position: absolute;
+        left: 200px;
+        top: 12px;
+    }
+    #logo span{
+        position: absolute;
+        left: 258px;
+        top: 20px;
+    }
+    #navbar{
+        display: block;
+    }
+    .max-screen{
+        max-width: 1700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    main{
+        margin-top: 68px;
+    }
+}   
