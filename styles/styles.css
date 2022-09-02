@@ -1,0 +1,199 @@
+:root{
+    --c1: #CCDBDC;
+    --c2: #80CED7;
+    --c3: #63C7B2;
+    --c4: #8E6C88;
+    --c5: #263D42;
+}   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: rgb(128,206,215);
+    background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%);
+    background-attachment: fixed;
+}
+.sombreado{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+header{
+    background-color: var(--c3);
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8px;
+}
+header img{
+    width: 40px;
+    height: 40px;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 50%;
+}
+#logo{
+    justify-self: end;
+}
+main{
+    padding: 40px 24px 0;
+}
+#section-promo{
+    height: 520px;
+}
+#portada p{
+    margin: 36px 0;
+}
+#texto-inferior{
+    text-align: end;
+    margin-bottom: 76px;
+}
+#portada{
+    /* width: 327px; */
+    margin: 0 auto;
+}
+.card-promo{
+    background-color: var(--c5);
+    min-width: 303px;
+    width: 100%;
+    max-width: 360px;
+    height: 300px;
+    padding: 16px;
+    border-radius: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+.img-promo{
+    margin: 0 auto;
+    width: 100%;
+    height: 65%;
+    border-radius: 30px;
+}
+.img-promo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.precio-combo{
+    width: 100%;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+}
+.btn-primario{
+    background: rgb(128,206,215);
+    background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%);
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    margin-top: 16px;
+}
+.btn-secundario{
+    background-color: transparent;
+    color: var(--c1);
+    /* background: rgb(128,206,215);
+    background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%); */
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    margin-top: 16px;
+    cursor: default;
+}
+.precio-combo p{
+    color: var(--c1);
+    height: 40px;
+    margin-top: 16px;
+    text-align: center;
+}
+.btn-img{
+    width: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.btn-img div{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--c1);
+}
+.card-categoria{
+    background-color: var(--c5);
+    width: 303px;
+    height: 358px;
+    padding: 16px;
+    border-radius: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+.btn-primario{
+    width: 147px;
+}
+.btn-card{
+    background: rgb(128,206,215);
+    background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%);
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    width: 147px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+
+}
+.btn-categoria{
+    display: grid;
+    justify-content: center;
+}
+.img-cards{
+    margin: 0 auto;
+    width: 100%;
+    height: 271px;
+    border-radius: 30px;
+}
+.img-cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+#footer{
+    background-color: var(--c5);
+    font-size: 14px;
+}
+#footer img{
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 50%;
+}
+#footer ul li{
+    list-style: none;
+    margin: 0 auto;
+}
+#footer a{
+    text-decoration: none;
+    color: var(--c1);
+
+}
+#footer p{
+    font-size: 10px;
+    color: var(--c1);
+
+}
+
+@media(min-width: 768px){
+    #portada{
+        max-width: 720px;
+    }
+    .card-promo{
+        height: 500px;
+        max-width: 500px;
+    }
+}
