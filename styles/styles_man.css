@@ -11,8 +11,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-#portada-woman{
-    background-image: url(../assets/images/portada-woman.jpg);
+#portada-man{
+    background-image: url(../assets/images/portada-man.jpg);
     height: 300px;
     width: 100vw;
     margin: 0 auto;
@@ -25,13 +25,13 @@
 }
 
 @media(min-width: 768px){
-    #portada-woman{
+    #portada-man{
         height: 500px;
     }
 }
 
 @media(min-width: 1200px){
-    #portada-woman{
+    #portada-man{
         margin-top: 160px;
         border-radius: 30px;
         max-width: 1100px;
@@ -43,7 +43,7 @@
     .sub-cat{
         width: 50%;
     }
-    #categoria-damas{
+    #categoria-caballeros{
         box-shadow: 0 0 10px var(--c1),
                     0 0 30px var(--c1),
                     0 0 60px var(--c1);
