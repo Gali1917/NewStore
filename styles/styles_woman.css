@@ -1,0 +1,42 @@
+:root{
+    --c1: #CCDBDC;
+    --c2: #80CED7;
+    --c3: #63C7B2;
+    --c4: #8E6C88;
+    --c5: #263D42;
+}   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#portada-woman{
+    background-image: url(../assets/images/portada-woman.jpg);
+    height: 300px;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+    object-fit:cover;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+
+}
+
+@media(min-width: 768px){
+    #portada-woman{
+        height: 500px;
+    }
+}
+
+@media(min-width: 1200px){
+    #portada-woman{
+        margin-top: 160px;
+        border-radius: 30px;
+        max-width: 1100px;
+        height: 600px;
+
+
+    }
+}

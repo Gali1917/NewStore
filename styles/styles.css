@@ -12,11 +12,11 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
     background: rgb(128,206,215);
     background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%);
     background-attachment: fixed;
     position: relative;
+    padding-bottom: 120px;
 }
 .sombreado{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -225,6 +225,7 @@ main{
     position: relative;
     margin: 0 auto;
 }
+
 .btn-primario{
     width: 147px;
 
@@ -269,6 +270,9 @@ main{
 #footer{
     background-color: var(--c5);
     font-size: 14px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 #footer img{
     width: 50px;
