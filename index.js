@@ -11,3 +11,16 @@ function btnAtras(){
     document.getElementById("section-categorias").style.display = "flex";
     document.getElementById("titulo-categoria").style.display = "none";
 }
+
+function desplegarMenu(){
+    const asideMenu = document.getElementById("aside-menu");
+    const aside = document.getElementById("aside");
+    if(aside.style.display == "block"){
+        aside.style.display = "none";
+    }
+    else{
+
+        aside.style.display = "block";
+    }
+    asideMenu.style.animationName = "desplegar-menu";
+}

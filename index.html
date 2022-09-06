@@ -15,10 +15,10 @@
 </head>
 
 <body>
-    <header class="sombreado">
-        <div id="header">
+    <header>
+        <div id="header" class="sombreado">
             <div id="menu">
-                <img src="./assets/images/menu.png" alt="Menu">
+                <img onClick="desplegarMenu()" src="./assets/images/menu.png" alt="Menu">
             </div>
             <div id="logo">
                 <span>Tu tienda Online</span>
@@ -56,13 +56,27 @@
                     <button class="btn-card-caballeros sombreado">Prendas Inferiores</button>
                     <button class="btn-card-caballeros sombreado">Conjuntos</button>
                     <a href="./pages/man.html">
-
                         <button class="btn-card-caballeros sombreado">Todo</button>
                     </a>
                 </div>
             </div>
-            </div>
+        </div>
     </header>
+    <aside id="aside">
+        <section id="aside-menu">
+            <ul>
+                <li>
+                    <a href="/">Iniciar Sesion</a>
+                </li>
+                <li>
+                    <a href="/">Nosotros</a>
+                </li>
+                <li>
+                    <a href="/">Contactenos</a>
+                </li>
+            </ul>
+        </section>
+    </aside>
     <main>
         <div class="container-fluid">
             <div class="row">
@@ -297,7 +311,7 @@
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
     </script>
 
-    <script src="./indes.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
