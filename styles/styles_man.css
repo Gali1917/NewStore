@@ -23,6 +23,27 @@
     background-position-y: center;
 
 }
+#titulo-categoria{
+    display: none;
+}
+#titulo-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-bottom: 20px;
+    
+}
+#titulo-section h3{
+    margin-top: 8px;
+}
+
+#titulo-section img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--c3);
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 @media(min-width: 768px){
     #portada-man{
@@ -38,7 +59,7 @@
         height: 600px;
     }
     .btn-card-caballeros{
-        display:none;
+        display: none;
     }
     .sub-cat{
         width: 50%;

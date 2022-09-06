@@ -63,14 +63,19 @@
         
     </article>
     <main>
-
         <section class="mt-5" id="categorias">
             <div class="container-fluid">
+                <div class="row" id="titulo-categoria">
+                    <div class="col" id="titulo-section">
+                        <h3>Todo</h3>
+                        <img src="../assets/images/back.png" onClick="btnAtras()" alt="Atras">
+                    </div>
+                </div>
                 <div class="row" id="section-categorias">
                     <div class="col-12 col-md-6 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
-                                <button class="btn-card sombreado">Todo</button>
+                                <button class="btn-card sombreado" onClick="desplegarTodoMan()">Todo</button>
                             </div>
                             <div class="img-cards sombreado">
                                 <img src="../assets/images/ellas.jpg" alt="Damas">
@@ -109,7 +114,7 @@
                     </div>
                 </div>
                 <div class="row mb-5" id="section-listado">
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$99.999</button>
@@ -119,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$49.999</button>
@@ -129,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$99.999</button>
@@ -139,7 +144,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$49.999</button>
@@ -149,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$99.999</button>
@@ -159,7 +164,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$49.999</button>
@@ -169,7 +174,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$99.999</button>
@@ -179,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$49.999</button>
@@ -189,7 +194,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$99.999</button>
@@ -199,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$49.999</button>
@@ -209,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$99.999</button>
@@ -219,7 +224,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div class="col-12 col-md-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$49.999</button>
@@ -258,8 +263,7 @@
             </div>
         </div>
     </footer>
-        <!-- place footer here -->
-    </footer>
+    <script src="../index.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
