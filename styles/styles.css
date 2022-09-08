@@ -34,6 +34,8 @@ header{
 #header{
     background-color: var(--c3);
     width: 100vw;
+    min-width: 375px;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 8px;
@@ -54,6 +56,18 @@ header img{
     background-color: var(--c5);
     display: none;
 }
+#boton-inventario{
+    display: none;
+}
+.btn-inventario{
+    background: rgb(128,206,215);
+    background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%);
+    border-radius: 25px;
+    height: 40px;
+    width: 147px;
+    border: none;
+    margin-right: 12px;
+}
 #busqueda{
     background-color: var(--c5);
     border: 2px solid var(--c2);
@@ -62,6 +76,7 @@ header img{
     color: var(--c2);
     font-size: 18px;
     width: 350px;
+    height: 40px;
 }
 
 .btn-navbar{
@@ -106,17 +121,9 @@ header img{
     border-right: 1px solid var(--c1);
     z-index: 3;
     padding: 48px 14px;
-
     animation-duration: 0.5s;
 }
-@keyframes desplegar-menu{
-    0%{
-        left: -300px;
-    }
-    100%{
-        left: 0;
-    }
-}
+
 aside ul li{
     list-style: none;
     margin-bottom: 12px;
@@ -173,6 +180,7 @@ aside a{
 }
 main{
     padding: 40px 24px 0;
+    margin-top: 80px;
 }
 #section-promo{
     height: 520px;
@@ -222,8 +230,13 @@ main{
     background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%);
     border-radius: 25px;
     height: 40px;
+    width: 147px;
     border: none;
     margin-top: 16px;
+}
+.btn-primario:hover{
+    box-shadow: 0 0 10px var(--c4),
+    0 0 30px var(--c4);
 }
 .btn-secundario{
     background-color: transparent;
@@ -266,15 +279,6 @@ main{
     border-radius: 40px;
     position: relative;
     margin: 0 auto;
-}
-
-.btn-primario{
-    width: 147px;
-
-}
-.btn-primario:hover{
-    box-shadow: 0 0 10px var(--c4),
-    0 0 30px var(--c4);
 }
 .btn-card{
     background: rgb(128,206,215);
@@ -337,14 +341,17 @@ main{
 
 }
 
-@media(min-width: 768px){
-
-    /* #header{
-        max-width: 768px;
-    } */
-    main{
-        margin-top: 40px;
+@keyframes desplegar-menu{
+    0%{
+        left: -300px;
     }
+    100%{
+        left: 0;
+    }
+}
+
+@media(min-width: 768px){
+    
     #portada{
         max-width: 720px;
     }
@@ -398,9 +405,7 @@ main{
     .sub-menu{
         display: block;
     }
-    main{
-        margin-top: 180px;
-    }
+
     #section-categorias{
         display: none;
     }
