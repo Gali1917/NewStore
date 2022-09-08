@@ -1,9 +1,14 @@
 :root{
-    --c1: #CCDBDC;
+    /* --c1: #CCDBDC;
     --c2: #80CED7;
     --c3: #63C7B2;
     --c4: #8E6C88;
-    --c5: #263D42;
+    --c5: #263D42; */
+    --c1: #F9EAA9;
+    --c2: #F7DC5F;
+    --c3: #F7DC5F;
+    --c4: #787151;
+    --c5: #000000;
 }   
 
 *{
@@ -12,12 +17,13 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(128,206,215);
-    background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%);
+    background: rgb(247,220,95);
+    background: radial-gradient(circle, rgba(247,220,95,1) 0%, rgba(0,0,0,1) 100%);
     background-attachment: fixed;
     position: relative;
-    padding-bottom: 120px;
     min-width: 375px;
+    min-height: calc(100vh - 100px);    
+    padding-bottom: 80px;
 }
 .sombreado{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -60,8 +66,8 @@ header img{
     display: none;
 }
 .btn-inventario{
-    background: rgb(128,206,215);
-    background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%);
+    background: rgb(247,220,95);
+    background: radial-gradient(circle, rgba(247,220,95,1) 0%, rgba(0,0,0,1) 100%);
     border-radius: 25px;
     height: 40px;
     width: 147px;
@@ -102,11 +108,10 @@ header img{
 }
 #aside{
     display: none;
-    background-color: #263d4280;
     top: 55px;
     height: calc(100vh - 55px);
     width: 100vw;
-    background-color: #263d42c0;
+    background-color: #787151b0;
     position: fixed;
     border-right: 1px solid var(--c1);
     z-index: 3;
@@ -180,7 +185,7 @@ aside a{
 }
 main{
     padding: 40px 24px 0;
-    margin-top: 80px;
+    padding-top: 80px;
 }
 #section-promo{
     height: 520px;
@@ -226,8 +231,8 @@ main{
     grid-template-columns: 1fr 1fr;  
 }
 .btn-primario{
-    background: rgb(128,206,215);
-    background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%);
+    background: rgb(247,220,95);
+background: radial-gradient(circle, rgba(247,220,95,1) 0%, rgba(0,0,0,1) 100%);
     border-radius: 25px;
     height: 40px;
     width: 147px;
@@ -281,8 +286,8 @@ main{
     margin: 0 auto;
 }
 .btn-card{
-    background: rgb(128,206,215);
-    background: radial-gradient(circle, rgba(128,206,215,1) 0%, rgba(96,123,129,1) 100%);
+    background: rgb(247,220,95);
+background: radial-gradient(circle, rgba(247,220,95,1) 0%, rgba(0,0,0,1) 100%);
     border-radius: 25px;
     height: 40px;
     border: none;
@@ -351,7 +356,9 @@ main{
 }
 
 @media(min-width: 768px){
-    
+    body{
+        min-height: 100vh;
+    }
     #portada{
         max-width: 720px;
     }
@@ -366,6 +373,7 @@ main{
 }
 
 @media(min-width: 1200px){
+
     header{
         position: static;
     }
@@ -414,5 +422,9 @@ main{
     }
     #categorias{
         max-width: 1400px;
+    }
+    #footer{
+        bottom: 0;
+
     }
 }   
