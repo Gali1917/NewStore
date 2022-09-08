@@ -1,8 +1,4 @@
-var admin = false;
-if(admin == true){
-    document.getElementById("boton-inventario").style.display = "block";
 
-}
 function desplegarTodoMan(){
     const sectionListado = document.getElementById("section-listado");
     const sectionCategorias = document.getElementById("section-categorias");
@@ -34,9 +30,9 @@ function iniciarSesion(){
     const inputEmail = document.getElementById("input-email");
     const inputPassword = document.getElementById("input-password");
     if(inputEmail.value == "admin"){
-        admin = true;
+        // history.go(-1);
+        location.href = "./inventario.html";
         document.getElementById("boton-inventario").style.display = "block";
-        history.go(-1);
     }
     else{
         alert("Usuario o contrasena incorrecto");
