@@ -38,3 +38,6 @@ function iniciarSesion(){
         alert("Usuario o contrasena incorrecto");
     }
 }
+function search(){
+    alert("En el momento no disponemos de esta funcion");
+}

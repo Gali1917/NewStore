@@ -28,16 +28,27 @@
 
     </header>
     <main>
-        <aside id="aside-inventario">
+        <aside id="aside-inventario" class="text-center">
             <ul>
                 <li>
-                    <a href="./pages/login.html">Iniciar Sesion</a>
+                    <h2>Control de inventario</h2>
+                    
                 </li>
                 <li>
-                    <a href="/">Nosotros</a>
+                    <h3 onClick="damas()">Damas</h3>
+                    <ul id="menu-aside-dama">
+                        <li>Prendas superiores</li>
+                        <li>Prendas inferiores</li>
+                        <li>Conjuntos</li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="/">Contactenos</a>
+                    <h3 onClick="caballeros()">Caballeros</h3>
+                    <ul id="menu-aside-caballero">
+                        <li>Prendas superiores</li>
+                        <li>Prendas inferiores</li>
+                        <li>Conjuntos</li>
+                    </ul>
                 </li>
             </ul>
         </aside>
@@ -46,7 +57,7 @@
                 <div class="max-screen">
                     <form class="d-flex" role="search">
                         <input id="busqueda-inventario" type="search" placeholder="Buscar...">
-                        <img class="btn-navbar" src="../assets/images/search.png" alt="Buscar">
+                        <img class="btn-navbar" src="../assets/images/search.png" alt="Buscar" onClick="search()">
                     </form>         
                     <img class="btn-navbar" src="../assets/images/info.png" alt="Informacion">
                 </div>
@@ -141,6 +152,7 @@
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
     </script>
     <script src="../index.js"></script>
+    <script src="../app/inventario.js"></script>
 </body>
 
 </html>

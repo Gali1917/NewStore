@@ -83,14 +83,24 @@ header img{
     z-index: 3;
     padding: 48px 14px;
 }
+aside ul{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--c1);
 
+}
 aside ul li{
     list-style: none;
-    margin-bottom: 12px;
+    padding-left: 0;
 }
-aside a{
-    text-decoration: none;
-    color: var(--c1)
+
+#menu-aside-dama{
+    display: none;
+}
+#menu-aside-caballero{
+    display: none;
 }
 #section{
     background-color: rgba(0, 0, 0, 0.349);
