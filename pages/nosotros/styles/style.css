@@ -171,6 +171,9 @@ main{
     z-index: 3;
 
 }
+.text-descripcion h3{
+    font-size: 2.5rem;
+}
 .text-descripcion h4{
     margin-bottom: 8px;
     padding-bottom: 8px;
