@@ -1,3 +1,7 @@
+function cerrarCarga(){
+    document.getElementById("pantalla-carga").style.display = "none";
+}
+
 
 function desplegarTodoMan(){
     const sectionListado = document.getElementById("section-listado");
