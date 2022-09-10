@@ -192,13 +192,21 @@ aside a{
     color: var(--c1);
 }
 .sub-categorias{
-    display: flex;
+    display: block;
     padding: 8px;
+    position: relative;
 }
-.sub-cat{
-    width: 100%;
-    padding: 0 8px;
+
+#sub-categorias-damas{
+    position: absolute;
+    right: 51%;
     display: flex;
+    justify-content: center;
+
+}
+#sub-categorias-caballeros{
+    position: absolute;
+    left: 51%;
 }
 .btn-card-damas{
     background: var(--c1);

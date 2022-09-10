@@ -32,7 +32,7 @@
                 <img onClick="desplegarMenu()" src="./assets/images/menu.png" alt="Menu">
             </div>
             <div id="logo">
-                <span>Tu tienda Online</span>
+                <span onClick="desplegarTodoInicio()">Tu tienda Online</span>
                 <a href="./index.html">    
                     <img src="./assets/images/logoS.png" alt="Logo">
                 </a>
@@ -65,13 +65,19 @@
                 </div>
             </div>
             <div class="sub-categorias">
-                <div id="sub-categorias-damas" class="sub-cat">
-                    <button class="btn-card-damas sombreado">Prendas Superiores</button>
-                    <button class="btn-card-damas sombreado">Prendas Inferiores</button>
-                    <button class="btn-card-damas sombreado">Conjuntos</button>
-                    <a href="./pages/woman.html">
-                        <button class="btn-card-damas sombreado">Todo</button>
-                    </a>
+                <div id="sub-categorias-damas">
+                    <div class="sub-cat">
+
+                        <button class="btn-card-damas sombreado">Prendas Superiores</button>
+                        <button class="btn-card-damas sombreado">Prendas Inferiores</button>
+                        <button class="btn-card-damas sombreado">Conjuntos</button>
+                        <a href="./pages/woman.html">
+                            <button class="btn-card-damas sombreado">Todo</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="sub-categorias-caballeros" class="sub-cat">
                     <button class="btn-card-caballeros sombreado">Prendas Superiores</button>
                     <button class="btn-card-caballeros sombreado">Prendas Inferiores</button>
                     <button class="btn-card-caballeros sombreado">Conjuntos</button>
@@ -173,7 +179,7 @@
                     </div>
                 </div>
                 <div class="row mb-5" id="section-listado">
-                    <div class="col-4 col-xl-3 mb-5">
+                    <div id="nueva-card" class="col-4 col-xl-3 mb-5">
                         <div class="card-categoria sombreado">
                             <div class="btn-categoria">
                                 <button class="btn-card sombreado">$99.999</button>
@@ -333,6 +339,7 @@
     </script>
 
     <script src="./index.js"></script>
+    <script src="./app/start.js"></script>
 </body>
 
 </html>
