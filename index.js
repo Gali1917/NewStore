@@ -45,3 +45,42 @@ function iniciarSesion(){
 function search(){
     alert("En el momento no disponemos de esta funcion");
 }
+
+function bajarMenuDamas(){
+    const categoriaDamas = document.getElementById("cat-damas");
+    categoriaDamas.style.animationName = "bajar";
+    categoriaDamas.style.top = "50px";
+    setTimeout(() => {
+        categoriaDamas.style.zIndex = "1";
+    }, 500);
+    setTimeout(() => {
+        subirMenuDamas();
+    }, 5000);
+}
+function subirMenuDamas(){
+    const categoriaDamas = document.getElementById("cat-damas");
+    categoriaDamas.style.zIndex = "-1";
+    setTimeout(() => {
+        categoriaDamas.style.top = "-20px";
+    }, 500);
+
+}
+function bajarMenuCaballeros(){
+    const categoriaCaballeros = document.getElementById("cat-caballeros");
+    categoriaCaballeros.style.animationName = "bajar";
+    categoriaCaballeros.style.top = "50px";
+    setTimeout(() => {
+        categoriaCaballeros.style.zIndex = "1";
+    }, 500);
+    setTimeout(() => {
+        subirMenuCaballeros();
+    }, 5000);
+}
+function subirMenuCaballeros(){
+    const categoriaCaballeros = document.getElementById("cat-caballeros");
+    categoriaCaballeros.style.zIndex = "-1";
+    setTimeout(() => {
+        categoriaCaballeros.style.top = "-20px";
+    }, 500);
+}
+

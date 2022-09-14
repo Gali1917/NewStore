@@ -185,28 +185,77 @@ aside a{
 #categoria-damas{
     width: 50%;
     background-color: var(--c1);
-}
-#categoria-caballeros{
-    width: 50%;
-    background-color: black;
-    color: var(--c1);
-}
-.sub-categorias{
-    display: block;
-    padding: 8px;
+    height: 52px;
     position: relative;
 }
 
-#sub-categorias-damas{
+
+#cat-damas{
+    width: 100%;
+    right: 0;
+    top: -20px;
+    height: auto;
+    padding: 0 12px;
     position: absolute;
-    right: 51%;
-    display: flex;
-    justify-content: center;
+    background-color: var(--c1);
+    z-index: -1;
+    animation-duration: 1s;
+    border-radius: 0 0 30px 30px;
 
 }
-#sub-categorias-caballeros{
+.back-damas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    transform: skew(-10deg, 0deg);
+
+}
+
+#sub-categorias-damas{
+    width: 50%;
+    position: relative;
+}
+
+#cat-damas h5{
+    padding: 0 12px;
+    background-color: var(--c1);
+    color: black;
+}
+#car-damas a{
+    text-decoration: none;
+}
+#categoria-caballeros{
+    width: 50%;
+    background-color: var(--c5);
+    height: 52px;
+    position: relative;
+    color: var(--c1);   
+}
+#cat-caballeros{
+    width: 100%;
+    left: 0;
+    top: -20px;
+    height: auto;
+    padding: 0 12px;
     position: absolute;
-    left: 51%;
+    background-color: var(--c5);
+    z-index: -1;
+    animation-duration: 1s;
+    border-radius: 0 0 30px 30px;
+}
+.back-caballeros{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    transform: skew(-10deg, 0deg);
+
+}
+#cat-caballeros h5{
+    padding: 0 12px;
+    color: var(--c1);   
+}
+#car-caballeros a{
+    text-decoration: none;
 }
 .btn-card-damas{
     background: var(--c1);
@@ -258,7 +307,7 @@ main{
     width: 100%;
     max-width: 360px;
     height: 300px;
-    padding: 16px;
+    border: 16px solid var(--c5);
     border-radius: 40px;
     position: relative;
     margin: 0 auto;
@@ -404,6 +453,16 @@ background: radial-gradient(circle, rgba(247,220,95,1) 0%, rgba(0,0,0,1) 100%);
     }
     100%{
         left: 0;
+    }
+}
+
+@keyframes bajar{
+    
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 50px;
     }
 }
 

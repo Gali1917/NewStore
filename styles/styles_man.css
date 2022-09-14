@@ -21,6 +21,7 @@
     height: 300px;
     width: 100vw;
     margin: 0 auto;
+    margin-top: 56px;
     padding: 0;
     object-fit:cover;
     background-size: cover;
