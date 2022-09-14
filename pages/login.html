@@ -48,29 +48,33 @@
         </div>
         <div class="sub-menu">
             <div class="categoria-nav">
-                <div id="categoria-damas">
+                <div id="categoria-damas" onMouseEnter="bajarMenuDamas()">
                     <p>DAMAS</p>
+                    <div id="cat-damas">
+                        <div class="back-damas">
+                            <h5>Prendas Superiores</h5>
+                            <h5>Prendas Inferiores</h5>
+                            <h5>Conjuntos</h5>
+                            <a href="./woman.html">
+                                <h5>Todo</h5>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div id="categoria-caballeros">
+                <div id="categoria-caballeros" onMouseEnter="bajarMenuCaballeros()">
                     <p>CABALLEROS</p>
+                    <div id="cat-caballeros">
+                        <div class="back-caballeros">
+                            <h5>Prendas Superiores</h5>
+                            <h5>Prendas Inferiores</h5>
+                            <h5>Conjuntos</h5>
+                            <a href="./man.html">
+                                <h5>Todo</h5>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="sub-categorias">
-                <div id="sub-categorias-damas" class="sub-cat">
-                    <button class="btn-card-damas sombreado">Prendas Superiores</button>
-                    <button class="btn-card-damas sombreado">Prendas Inferiores</button>
-                    <button class="btn-card-damas sombreado">Conjuntos</button>
-                    <a href="../pages/woman.html">
-                        <button class="btn-card-damas sombreado">Todo</button>
-                    </a>
-                    <button class="btn-card-caballeros sombreado">Prendas Superiores</button>
-                    <button class="btn-card-caballeros sombreado">Prendas Inferiores</button>
-                    <button class="btn-card-caballeros sombreado">Conjuntos</button>
-                    <a href="../pages/man.html">
-                        <button class="btn-card-caballeros sombreado">Todo</button>
-                    </a>
-                </div>
-            </div>
+            </div>            
         </div>
     </header>
     <aside id="aside">
@@ -96,7 +100,7 @@
 
             <h3>Iniciar Sesion</h3>
             <div class="input-login">
-                <input id="input-email" type="text" required="required">
+                <input id="input-usuario" type="text" required="required">
                 <span>Usuario</span>
             </div>
             <div class="input-login">
@@ -107,7 +111,39 @@
                 <button class="sombreado btn-primario">Entrar</button>
             </a> -->
             <button class="sombreado btn-primario" onClick="iniciarSesion()">Entrar</button>
-        </div>        
+            <a onClick="mostrarRegistro()">
+                <p>Registrarse</p>
+            </a>
+        </div> 
+        <div id="registro-mostrar">
+            <div id="registro">
+                <div onClick="ocultarRegistro()">
+                    <img class="cerrar" src="../assets/images/cerrar.png" alt="Cerrar">           
+                </div>
+                
+                <h3>Crear cuenta</h3>
+                <div class="input-login">
+                    <input id="input-usuario-nuevo" type="text" required="required">
+                    <span>Usuario</span>
+                </div>
+                <div class="input-login">
+                    <input id="input-email-nuevo" type="email" required="required">
+                    <span>Correo</span>
+                </div>                
+                <div class="input-login">
+                    <input id="input-password-nuevo" type="password" required="required">
+                    <span>Password</span>
+                </div>
+                <div class="input-login">
+                    <input id="input-repetir-password-nuevo" type="password" required="required">
+                    <span>Repita su password</span>
+                </div>
+                <!-- <a href="./login.html" onClick="iniciarSesion()">
+                    <button class="sombreado btn-primario">Entrar</button>
+                </a> -->
+                <button class="sombreado btn-primario" onClick="iniciarSesion()">Registar</button>
+            </div>          
+        </div>    
     </main>
     <footer id="footer">
         <div class="container-fluid">
@@ -135,6 +171,7 @@
         </div>
     </footer>
 
+    <script src="../app/registro.js"></script>
     <script src="../index.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

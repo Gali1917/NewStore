@@ -16,6 +16,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100%;
+    position: relative;
+}
 main{
     margin-top: 100px;
 }
@@ -30,6 +34,15 @@ main{
     border-radius: 30px;
     margin: 0 auto;
     position: relative;
+}
+#login a{
+    position: absolute;
+    bottom: 8px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--c3);
+    height: 24px;
+    color: var(--c3);
+    font-size: 14px;
 }
 .cerrar{
     position: absolute;
@@ -83,6 +96,35 @@ h3{
 }
 .btn-primario:hover{
     box-shadow: 0 0 4px var(--c4);
+}
+#registro-mostrar{
+    display: none;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#registro{
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    background-color: var(--c5);
+    height: 420px;
+    border-radius: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+#registro a{
+    position: absolute;
+    bottom: 8px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--c3);
+    height: 24px;
+    color: var(--c3);
+    font-size: 14px;
 }
 
 @media(min-width: 768px){
