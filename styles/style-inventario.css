@@ -152,6 +152,17 @@ aside ul li{
     position: sticky;
     top: 20;
 }
+#tabla{
+    background-color: #F7DC5F;
+    width: 100%;
+}
+.tabla tr{
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+.tabla th, .tabla td{
+    /* border: 1px solid var(--c5); */
+}
 .item{
     display: flex;
     justify-content: space-between;
